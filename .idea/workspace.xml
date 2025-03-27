@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b8774392-6ceb-467f-910d-05101a8ae4a7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/css/gallery.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/timeline.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/articles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/timeline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles/ada-lovelace.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/articles/ada-lovelace.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles/alan-turing.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/articles/alan-turing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles/bill-gates.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/articles/bill-gates.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles/bjarne-stroustrup.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/articles/bjarne-stroustrup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles/dan-bricklin.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/articles/dan-bricklin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles/dennis-ritchie.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/articles/dennis-ritchie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles/donald-knuth.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/articles/donald-knuth.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles/grace-hopper.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/articles/grace-hopper.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles/james-gosling.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/articles/james-gosling.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles/jean-bartik.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/articles/jean-bartik.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles/john-von-neumann.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/articles/john-von-neumann.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles/ken-thompson.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/articles/ken-thompson.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles/linus-torvalds.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/articles/linus-torvalds.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles/richard-stallman.html" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles/steve-jobs.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/articles/steve-jobs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles/tim-berners-lee.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/articles/tim-berners-lee.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/article.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/article.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Logo_dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/logo/Logo_dark.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Logo_ligth.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/logo/Logo_ligth.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Pattern.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/backgrounds/Pattern.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog-1-James-Gosling.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/authors/blog-1-James-Gosling.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog-10-Alan-Turing.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/authors/blog-10-Alan-Turing.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog-11-Tim-Berners-Lee.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/authors/blog-11-Tim-Berners-Lee.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog-12-Ada-Lovelace.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/authors/blog-12-Ada-Lovelace.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog-13-Jean-Bartik.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/authors/blog-13-Jean-Bartik.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog-14-John-von-Neumann.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/authors/blog-14-John-von-Neumann.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog-15-Donald-Knuth.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/authors/blog-15-Donald-Knuth.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog-16-Steve-Jobs.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/authors/blog-16-Steve-Jobs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog-2-Grace-Hopper.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/authors/blog-2-Grace-Hopper.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog-3-Richard-Stallman.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/authors/blog-3-Richard-Stallman.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog-4-Dennis-Ritchie.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/authors/blog-4-Dennis-Ritchie.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog-5-Ken-Thompson.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/authors/blog-5-Ken-Thompson.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog-6-Linus-Torvalds.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/authors/blog-6-Linus-Torvalds.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog-7-Dan-Bricklin.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/authors/blog-7-Dan-Bricklin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog-8-Bjarne-Stroustrup.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/authors/blog-8-Bjarne-Stroustrup.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog-9-Bill-Gates.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/authors/blog-9-Bill-Gates.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icons/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icons/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/main_photo.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/backgrounds/main_photo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partials/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/partials/header.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "GutBla"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/GutBla/PROJECT_El_Blog_El_ADN_del_Software.git",
+    "accountId": "21ce3e8a-8a54-480c-9f39-254c3540a2ce"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2uQaumOeFzDcB8bVO9oveiV8vth" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.index.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MSI PULSE\Documents\Jala University\Ingenieria de Software\Curso\History of Software Engineering\5. Proyectos\ADN_del_Software\assets\images\authors" />
+      <recent name="C:\Users\MSI PULSE\Documents\Jala University\Ingenieria de Software\Curso\History of Software Engineering\5. Proyectos\ADN_del_Software\assets\images" />
+      <recent name="C:\Users\MSI PULSE\Documents\Jala University\Ingenieria de Software\Curso\History of Software Engineering\5. Proyectos\ADN_del_Software\assets\images\backgrounds" />
+      <recent name="C:\Users\MSI PULSE\Documents\Jala University\Ingenieria de Software\Curso\History of Software Engineering\5. Proyectos\ADN_del_Software\assets\images\icons" />
+      <recent name="C:\Users\MSI PULSE\Documents\Jala University\Ingenieria de Software\Curso\History of Software Engineering\5. Proyectos\ADN_del_Software\assets\images\logo" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b8774392-6ceb-467f-910d-05101a8ae4a7" name="Changes" comment="" />
+      <created>1742183477004</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742183477004</updated>
+      <workItem from="1742183478067" duration="3357000" />
+      <workItem from="1742220974060" duration="1209000" />
+      <workItem from="1742270719396" duration="2000000" />
+      <workItem from="1742311758620" duration="1770000" />
+      <workItem from="1742314750967" duration="8035000" />
+      <workItem from="1742495546601" duration="1193000" />
+      <workItem from="1742613289181" duration="4048000" />
+      <workItem from="1742679053732" duration="2092000" />
+      <workItem from="1742696806811" duration="5126000" />
+      <workItem from="1742827519961" duration="4306000" />
+      <workItem from="1742856511181" duration="612000" />
+      <workItem from="1742917935989" duration="4052000" />
+      <workItem from="1742925815155" duration="5821000" />
+      <workItem from="1743032946211" duration="16068000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
