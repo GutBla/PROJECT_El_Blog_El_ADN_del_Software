@@ -1,3 +1,7 @@
+/*-----------------------------------------*\
+  # THEMES
+\*-----------------------------------------*/
+
 .light-theme {
     --background-primary: hsl(43, 96%, 79%);
     --background-secondary: hsl(60, 100%, 96%);
@@ -14,6 +18,10 @@
     --accent: hsl(30, 91%, 46%);
 }
 
+/*-----------------------------------------*\
+  # GLOBAL VARIABLES
+\*-----------------------------------------*/
+
 :root {
     --fs-base: 0.85rem;
     --fs-1: 1.875rem;
@@ -22,6 +30,10 @@
     --fs-4: 0.875rem;
     --py: 5rem;
 }
+
+/*-----------------------------------------*\
+  # RESET & BASE STYLES
+\*-----------------------------------------*/
 
 *,
 *::before,
@@ -35,10 +47,23 @@ a { text-decoration: none; }
 li { list-style: none; }
 img, button { display: block; }
 
+/*-----------------------------------------*\
+  # LAYOUT COMPONENTS
+\*-----------------------------------------*/
+
 .container {
     margin-inline: auto;
     padding: 0 15px;
 }
+
+.main {
+    background: var(--background-secondary);
+    padding: var(--py) 0;
+}
+
+/*-----------------------------------------*\
+  # BUTTONS
+\*-----------------------------------------*/
 
 .btn {
     min-width: 10rem;
@@ -51,10 +76,9 @@ img, button { display: block; }
     padding: 0.6875rem 1.1875rem;
 }
 
-.main {
-    background: var(--background-secondary);
-    padding: var(--py) 0;
-}
+/*-----------------------------------------*\
+  # BLOG & ARTICLES
+\*-----------------------------------------*/
 
 .blog .h2 {
     text-align: center;
@@ -93,7 +117,6 @@ img, button { display: block; }
     line-height: 1.2;
 }
 
-
 .article-banner {
     overflow: hidden;
     position: relative;
@@ -109,6 +132,7 @@ img, button { display: block; }
 .article-banner img:hover {
     transform: scale(1.1);
 }
+
 .article-meta {
     font-size: var(--fs-4);
     color: var(--foreground-secondary);
@@ -120,11 +144,15 @@ img, button { display: block; }
     color: var(--foreground-primary);
 }
 
-@media (min-width: 650px) {
-    .article { padding: 30px; }
-}
+/*-----------------------------------------*\
+  # SIDEBAR
+\*-----------------------------------------*/
 
 .aside { display: none; }
+
+/*-----------------------------------------*\
+  # FOOTER
+\*-----------------------------------------*/
 
 footer { background: var(--background-primary); }
 
@@ -145,15 +173,31 @@ footer .wrapper { text-align: center; }
     border-top: 1px solid var(--action-primary);
 }
 
+/*-----------------------------------------*\
+  # MEDIA QUERIES
+\*-----------------------------------------*/
+
 @media (min-width: 650px) {
     .container { padding: 0 30px; }
+    .article { padding: 30px; }
 }
 
 @media (min-width: 1024px) {
     .container { max-width: 1150px; }
-    .main .container { display: grid; grid-template-columns: 5fr 2fr; gap: 60px; }
-    .aside { display: block; align-self: stretch; }
-    .aside .h2 { color: var(--foreground-secondary); margin-bottom: 3rem; text-align: center; }
+    .main .container {
+        display: grid;
+        grid-template-columns: 5fr 2fr;
+        gap: 60px;
+    }
+    .aside {
+        display: block;
+        align-self: stretch;
+    }
+    .aside .h2 {
+        color: var(--foreground-secondary);
+        margin-bottom: 3rem;
+        text-align: center;
+    }
 }
 
 @media (max-width: 1150px) {

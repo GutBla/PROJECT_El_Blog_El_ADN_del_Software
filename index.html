@@ -8,29 +8,28 @@
     <title>El ADN del Software</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/icons/favicon.ico" type="image/x-icon">
 
-    <!-- Enlace al CSS personalizado -->
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
-    <!-- Enlaces a Google Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body class="light-theme">
 
-<!-- HEADER: Contiene el logo, navegación y botones de tema y menú -->
+<!-- HEADER -->
 <header>
     <div class="container">
         <nav class="navbar">
-            <!-- Logo (en versiones light y dark) -->
             <a href="index.html">
-                <img src="../assets/images/Logo_ligth.svg" alt="Logo de SimpleBlog" width="200" class="logo-light">
-                <img src="../assets/images/Logo_dark.svg" alt="Logo de SimpleBlog" width="200" class="logo-dark">
+                <img src="assets/images/logo/Logo_ligth.svg" alt="Logo de SimpleBlog" width="200" class="logo-light">
+                <img src="assets/images/logo/Logo_dark.svg" alt="Logo de SimpleBlog" width="200" class="logo-dark">
             </a>
-            <!-- Botones para cambiar de tema y abrir menú móvil -->
+
             <div class="btn-group">
                 <button class="theme-btn theme-btn-mobile light">
                     <ion-icon name="moon" class="moon"></ion-icon>
@@ -40,30 +39,29 @@
                     <ion-icon name="menu-outline"></ion-icon>
                 </button>
             </div>
-            <!-- Navegación principal para pantallas de escritorio -->
+
             <div class="flex-wrapper">
                 <ul class="desktop-nav">
-                    <li><a href="#" class="nav-link">Inicio</a></li>
-                    <li><a href="#" class="nav-link">Artículos</a></li>
-                    <li><a href="#" class="nav-link">Linea del Tiempo</a></li>
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="pages/articles.html" class="nav-link">Galeria Artículos</a></li>
+                    <li><a href="pages/timeline.html" class="nav-link">Línea del Tiempo</a></li>
                 </ul>
-                <!-- Botón de cambio de tema para escritorio -->
                 <button class="theme-btn theme-btn-desktop light">
                     <ion-icon name="moon" class="moon"></ion-icon>
                     <ion-icon name="sunny" class="sun"></ion-icon>
                 </button>
             </div>
-            <!-- Menú móvil -->
+
             <div class="mobile-nav">
                 <button class="nav-close-btn">
                     <ion-icon name="close-outline"></ion-icon>
                 </button>
                 <div class="wrapper">
                     <p class="h3 nav-title">Menú Principal</p>
-                    <ul class="desktop-nav">
-                        <li><a href="#" class="nav-link">Inicio</a></li>
-                        <li><a href="#" class="nav-link">Artículos</a></li>
-                        <li><a href="#" class="nav-link">Linea del Tiempo</a></li>
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Inicio</a></li>
+                        <li><a href="pages/articles.html" class="nav-link">Galeria Artículos</a></li>
+                        <li><a href="pages/timeline.html" class="nav-link">Línea del Tiempo</a></li>
                     </ul>
                 </div>
                 <div>
@@ -77,28 +75,22 @@
     </div>
 </header>
 
-<!-- MAIN: Contiene el contenido principal de la página -->
+<!-- MAIN -->
 <main>
-    <!-- HERO SECTION: Presenta el mensaje principal y la imagen destacada -->
+    <!-- HERO SECTION -->
     <div class="hero">
         <div class="container">
             <div class="left">
-                <h1 class="h1">
-                    Bienvenido a, <b>El ADN del Software</b>.<br>
-                    Descifrando la historia del código.
-                </h1>
-                <p class="h3">
-                    Un blog sobre la evolución del software, sus lenguajes, sus creadores y las revoluciones tecnológicas que cambiaron el mundo.
-                </p>
+                <h1 class="h1">Bienvenido a, <b>El ADN del Software</b>.<br>Descifrando la historia del código.</h1>
+                <p class="h3">Un blog sobre la evolución del software, sus lenguajes, sus creadores y las revoluciones tecnológicas que cambiaron el mundo.</p>
                 <div class="btn-group">
                     <a href="#" class="btn btn-primary">Suscribirme</a>
                 </div>
             </div>
             <div class="right">
-                <!-- Fondo de patrón y contenedor de imagen con formas decorativas -->
                 <div class="pattern-bg"></div>
                 <div class="img-box">
-                    <img src="assets/images/main_photo.png" class="hero-img">
+                    <img src="../assets/images/backgrounds/main_photo.png" class="hero-img">
                     <div class="shape shape-1"></div>
                     <div class="shape shape-2"></div>
                 </div>
@@ -106,24 +98,22 @@
         </div>
     </div>
 
-    <!-- SECCIÓN MAIN: Contiene el blog y el aside -->
+    <!-- BLOG SECTION -->
     <div class="main">
         <div class="container">
-            <!-- BLOG SECTION: Muestra los artículos -->
             <div class="blog">
                 <h2 class="h2">Últimos Artículos Históricos</h2>
                 <p class="blog-text">Explora los relatos de los pioneros que cambiaron la historia de la informática.</p>
-                <div class="blog-card-group">
-                    <!-- Cada bloque de "blog-card" representa un artículo -->
 
+                <div class="blog-card-group">
                     <!-- Artículo 1 -->
                     <div class="blog-card">
                         <div class="blog-card-banner">
-                            <img src="./assets/images/blog-1-James-Gosling.png" alt="James Gosling" width="250" class="blog-banner-img">
+                            <img src="assets/images/authors/blog-1-James-Gosling.png" alt="James Gosling" width="250" class="blog-banner-img">
                         </div>
                         <div class="blog-content-wrapper">
                             <button class="blog-topic text-tiny">História del Software</button>
-                            <h3><a href="/articles/james-gosling.html" class="h3">James Gosling: El creador de Java</a></h3>
+                            <h3><a href="pages/articles/james-gosling.html" class="h3">James Gosling: El creador de Java</a></h3>
                             <p class="blog-text">Descubre la historia de James Gosling y la creación del lenguaje Java, que revolucionó la programación.</p>
                         </div>
                     </div>
@@ -132,11 +122,11 @@
                     <!-- Artículo 2 -->
                     <div class="blog-card">
                         <div class="blog-card-banner">
-                            <img src="./assets/images/blog-2-Grace-Hopper.png" alt="Grace Hopper" width="250" class="blog-banner-img">
+                            <img src="assets/images/authors/blog-2-Grace-Hopper.png" alt="Grace Hopper" width="250" class="blog-banner-img">
                         </div>
                         <div class="blog-content-wrapper">
                             <button class="blog-topic text-tiny">História del Software</button>
-                            <h3><a href="/articles/grace-hopper.html" class="h3">Grace Hopper: Pionera en la programación</a></h3>
+                            <h3><a href="pages/articles/grace-hopper.html" class="h3">Grace Hopper: Pionera en la programación</a></h3>
                             <p class="blog-text">Explora la contribución de Grace Hopper en la informática y su legado en la programación.</p>
                         </div>
                     </div>
@@ -144,11 +134,11 @@
                     <!-- Artículo 3 -->
                     <div class="blog-card">
                         <div class="blog-card-banner">
-                            <img src="./assets/images/blog-3-Richard-Stallman.png" alt="Richard Stallman" width="250" class="blog-banner-img">
+                            <img src="assets/images/authors/blog-3-Richard-Stallman.png" alt="Richard Stallman" width="250" class="blog-banner-img">
                         </div>
                         <div class="blog-content-wrapper">
                             <button class="blog-topic text-tiny">História del Software</button>
-                            <h3><a href="/articles/richard-stallman.html" class="h3">Richard Stallman: Defensor del software libre</a></h3>
+                            <h3><a href="pages/articles/richard-stallman.html" class="h3">Richard Stallman: Defensor del software libre</a></h3>
                             <p class="blog-text">Una mirada a la vida y obra de Richard Stallman, defensor del software libre y de la ética en la tecnología.</p>
                         </div>
                     </div>
@@ -156,11 +146,11 @@
                     <!-- Artículo 4 -->
                     <div class="blog-card">
                         <div class="blog-card-banner">
-                            <img src="./assets/images/blog-4-Dennis-Ritchie.png" alt="Dennis Ritchie" width="250" class="blog-banner-img">
+                            <img src="assets/images/authors/blog-4-Dennis-Ritchie.png" alt="Dennis Ritchie" width="250" class="blog-banner-img">
                         </div>
                         <div class="blog-content-wrapper">
                             <button class="blog-topic text-tiny">História del Software</button>
-                            <h3><a href="/articles/dennis-ritchie.html" class="h3">Dennis Ritchie: Creador del lenguaje C</a></h3>
+                            <h3><a href="pages/articles/dennis-ritchie.html" class="h3">Dennis Ritchie: Creador del lenguaje C</a></h3>
                             <p class="blog-text">Conoce la historia de Dennis Ritchie, creador del lenguaje C y co-desarrollador de Unix.</p>
                         </div>
                     </div>
@@ -168,11 +158,11 @@
                     <!-- Artículo 5 -->
                     <div class="blog-card">
                         <div class="blog-card-banner">
-                            <img src="./assets/images/blog-5-Ken-Thompson.png" alt="Ken Thompson" width="250" class="blog-banner-img">
+                            <img src="assets/images/authors/blog-5-Ken-Thompson.png" alt="Ken Thompson" width="250" class="blog-banner-img">
                         </div>
                         <div class="blog-content-wrapper">
                             <button class="blog-topic text-tiny">História del Software</button>
-                            <h3><a href="/articles/ken-thompson.html" class="h3">Ken Thompson: Innovador en sistemas operativos</a></h3>
+                            <h3><a href="pages/articles/ken-thompson.html" class="h3">Ken Thompson: Innovador en sistemas operativos</a></h3>
                             <p class="blog-text">Descubre cómo Ken Thompson contribuyó al desarrollo de sistemas operativos y a la informática moderna.</p>
                         </div>
                     </div>
@@ -180,11 +170,11 @@
                     <!-- Artículo 6 -->
                     <div class="blog-card">
                         <div class="blog-card-banner">
-                            <img src="./assets/images/blog-6-Linus-Torvalds.png" alt="Linus Torvalds" width="250" class="blog-banner-img">
+                            <img src="assets/images/authors/blog-6-Linus-Torvalds.png" alt="Linus Torvalds" width="250" class="blog-banner-img">
                         </div>
                         <div class="blog-content-wrapper">
                             <button class="blog-topic text-tiny">História del Software</button>
-                            <h3><a href="/articles/linus-torvalds.html" class="h3">Linus Torvalds: El creador de Linux</a></h3>
+                            <h3><a href="pages/articles/linus-torvalds.html" class="h3">Linus Torvalds: El creador de Linux</a></h3>
                             <p class="blog-text">Explora la vida de Linus Torvalds y su impacto en el mundo del software libre con Linux.</p>
                         </div>
                     </div>
@@ -192,11 +182,11 @@
                     <!-- Artículo 7 -->
                     <div class="blog-card">
                         <div class="blog-card-banner">
-                            <img src="./assets/images/blog-7-Dan-Bricklin.png" alt="Dan Bricklin" width="250" class="blog-banner-img">
+                            <img src="assets/images/authors/blog-7-Dan-Bricklin.png" alt="Dan Bricklin" width="250" class="blog-banner-img">
                         </div>
                         <div class="blog-content-wrapper">
                             <button class="blog-topic text-tiny">História del Software</button>
-                            <h3><a href="/articles/dan-bricklin.html" class="h3">Dan Bricklin: Pionero de las hojas de cálculo</a></h3>
+                            <h3><a href="pages/articles/dan-bricklin.html" class="h3">Dan Bricklin: Pionero de las hojas de cálculo</a></h3>
                             <p class="blog-text">Conoce la historia de Dan Bricklin, creador de la primera hoja de cálculo electrónica, VisiCalc.</p>
                         </div>
                     </div>
@@ -204,11 +194,11 @@
                     <!-- Artículo 8 -->
                     <div class="blog-card">
                         <div class="blog-card-banner">
-                            <img src="./assets/images/blog-8-Bjarne-Stroustrup.png" alt="Bjarne Stroustrup" width="250" class="blog-banner-img">
+                            <img src="assets/images/authors/blog-8-Bjarne-Stroustrup.png" alt="Bjarne Stroustrup" width="250" class="blog-banner-img">
                         </div>
                         <div class="blog-content-wrapper">
                             <button class="blog-topic text-tiny">História del Software</button>
-                            <h3><a href="/articles/bjarne-stroustrup.html" class="h3">Bjarne Stroustrup: El creador de C++</a></h3>
+                            <h3><a href="pages/articles/bjarne-stroustrup.html" class="h3">Bjarne Stroustrup: El creador de C++</a></h3>
                             <p class="blog-text">Descubre cómo Bjarne Stroustrup revolucionó la programación con la invención del lenguaje C++.</p>
                         </div>
                     </div>
@@ -216,11 +206,11 @@
                     <!-- Artículo 9 -->
                     <div class="blog-card">
                         <div class="blog-card-banner">
-                            <img src="./assets/images/blog-9-Bill-Gates.png" alt="Bill Gates" width="250" class="blog-banner-img">
+                            <img src="assets/images/authors/blog-9-Bill-Gates.png" alt="Bill Gates" width="250" class="blog-banner-img">
                         </div>
                         <div class="blog-content-wrapper">
                             <button class="blog-topic text-tiny">História del Software</button>
-                            <h3><a href="/articles/bill-gates.html" class="h3">Bill Gates: Innovador y filántropo</a></h3>
+                            <h3><a href="pages/articles/bill-gates.html" class="h3">Bill Gates: Innovador y filántropo</a></h3>
                             <p class="blog-text">Explora la trayectoria de Bill Gates, cofundador de Microsoft y figura clave en la industria tecnológica.</p>
                         </div>
                     </div>
@@ -228,11 +218,11 @@
                     <!-- Artículo 10 -->
                     <div class="blog-card">
                         <div class="blog-card-banner">
-                            <img src="./assets/images/blog-10-Alan-Turing.png" alt="Alan Turing" width="250" class="blog-banner-img">
+                            <img src="assets/images/authors/blog-10-Alan-Turing.png" alt="Alan Turing" width="250" class="blog-banner-img">
                         </div>
                         <div class="blog-content-wrapper">
                             <button class="blog-topic text-tiny">História del Software</button>
-                            <h3><a href="/articles/bill-gates.html" class="h3">Alan Turing: Padre de la computación</a></h3>
+                            <h3><a href="pages/articles/alan-turing.html" class="h3">Alan Turing: Padre de la computación</a></h3>
                             <p class="blog-text">Conoce la vida de Alan Turing, cuyo trabajo sentó las bases de la informática moderna.</p>
                         </div>
                     </div>
@@ -240,11 +230,11 @@
                     <!-- Artículo 11 -->
                     <div class="blog-card">
                         <div class="blog-card-banner">
-                            <img src="./assets/images/blog-11-Tim-Berners-Lee.png" alt="Tim Berners-Lee" width="250" class="blog-banner-img">
+                            <img src="assets/images/authors/blog-11-Tim-Berners-Lee.png" alt="Tim Berners-Lee" width="250" class="blog-banner-img">
                         </div>
                         <div class="blog-content-wrapper">
                             <button class="blog-topic text-tiny">História del Software</button>
-                            <h3><a href="/articles/tim-berners-lee.html" class="h3">Tim Berners-Lee: Creador de la World Wide Web</a></h3>
+                            <h3><a href="pages/articles/tim-berners-lee.html" class="h3">Tim Berners-Lee: Creador de la World Wide Web</a></h3>
                             <p class="blog-text">Descubre la historia de Tim Berners-Lee y cómo inventó la World Wide Web, transformando la comunicación global.</p>
                         </div>
                     </div>
@@ -252,11 +242,11 @@
                     <!-- Artículo 12 -->
                     <div class="blog-card">
                         <div class="blog-card-banner">
-                            <img src="./assets/images/blog-12-Ada-Lovelace.png" alt="Ada Lovelace" width="250" class="blog-banner-img">
+                            <img src="assets/images/authors/blog-12-Ada-Lovelace.png" alt="Ada Lovelace" width="250" class="blog-banner-img">
                         </div>
                         <div class="blog-content-wrapper">
                             <button class="blog-topic text-tiny">História del Software</button>
-                            <h3><a href="/articles/ada-lovelace.html" class="h3">Ada Lovelace: La primera programadora</a></h3>
+                            <h3><a href="pages/articles/ada-lovelace.html" class="h3">Ada Lovelace: La primera programadora</a></h3>
                             <p class="blog-text">Explora la vida de Ada Lovelace, considerada la primera programadora de la historia.</p>
                         </div>
                     </div>
@@ -264,11 +254,11 @@
                     <!-- Artículo 13 -->
                     <div class="blog-card">
                         <div class="blog-card-banner">
-                            <img src="./assets/images/blog-13-Jean-Bartik.png" alt="Jean Bartik" width="250" class="blog-banner-img">
+                            <img src="assets/images/authors/blog-13-Jean-Bartik.png" alt="Jean Bartik" width="250" class="blog-banner-img">
                         </div>
                         <div class="blog-content-wrapper">
                             <button class="blog-topic text-tiny">História del Software</button>
-                            <h3><a href="/articles/jean-bartik.html" class="h3">Jean Bartik: Pionera en la programación</a></h3>
+                            <h3><a href="pages/articles/jean-bartik.html" class="h3">Jean Bartik: Pionera en la programación</a></h3>
                             <p class="blog-text">Conoce a Jean Bartik y su importante contribución en los primeros días de la computación digital.</p>
                         </div>
                     </div>
@@ -276,11 +266,11 @@
                     <!-- Artículo 14 -->
                     <div class="blog-card">
                         <div class="blog-card-banner">
-                            <img src="./assets/images/blog-14-John-von-Neumann.png" alt="John von Neumann" width="250" class="blog-banner-img">
+                            <img src="assets/images/authors/blog-14-John-von-Neumann.png" alt="John von Neumann" width="250" class="blog-banner-img">
                         </div>
                         <div class="blog-content-wrapper">
                             <button class="blog-topic text-tiny">História del Software</button>
-                            <h3><a href="/articles/john-von-neumann.html" class="h3">John von Neumann: Visionario en computación</a></h3>
+                            <h3><a href="pages/articles/john-von-neumann.html" class="h3">John von Neumann: Visionario en computación</a></h3>
                             <p class="blog-text">Descubre el legado de John von Neumann y su influencia en la arquitectura de las computadoras modernas.</p>
                         </div>
                     </div>
@@ -288,11 +278,11 @@
                     <!-- Artículo 15 -->
                     <div class="blog-card">
                         <div class="blog-card-banner">
-                            <img src="./assets/images/blog-15-Donald-Knuth.png" alt="Donald Knuth" width="250" class="blog-banner-img">
+                            <img src="assets/images/authors/blog-15-Donald-Knuth.png" alt="Donald Knuth" width="250" class="blog-banner-img">
                         </div>
                         <div class="blog-content-wrapper">
                             <button class="blog-topic text-tiny">História del Software</button>
-                            <h3><a href="/articles/donald-knuth.html" class="h3">Donald Knuth: Maestro de los algoritmos</a></h3>
+                            <h3><a href="pages/articles/donald-knuth.html" class="h3">Donald Knuth: Maestro de los algoritmos</a></h3>
                             <p class="blog-text">Explora la obra de Donald Knuth, autor de "The Art of Computer Programming" y una referencia en algoritmos.</p>
                         </div>
                     </div>
@@ -300,22 +290,20 @@
                     <!-- Artículo 16 -->
                     <div class="blog-card">
                         <div class="blog-card-banner">
-                            <img src="./assets/images/blog-16-Steve-Jobs.png" alt="Steve Jobs" width="250" class="blog-banner-img">
+                            <img src="assets/images/authors/blog-16-Steve-Jobs.png" alt="Steve Jobs" width="250" class="blog-banner-img">
                         </div>
                         <div class="blog-content-wrapper">
                             <button class="blog-topic text-tiny">História del Software</button>
-                            <h3><a href="/articles/steve-jobs.html" class="h3">Steve Jobs: Revolucionario de la tecnología</a></h3>
+                            <h3><a href="pages/articles/steve-jobs.html" class="h3">Steve Jobs: Revolucionario de la tecnología</a></h3>
                             <p class="blog-text">Conoce la historia de Steve Jobs, cofundador de Apple y figura emblemática de la innovación tecnológica.</p>
                         </div>
                     </div>
                 </div>
-                <!-- Botón para cargar más artículos -->
                 <button class="btn load-more">Cargar más</button>
             </div>
 
-            <!-- ASIDE: Barra lateral con temas, etiquetas y boletín -->
+            <!-- ASIDE -->
             <div class="aside">
-                <!-- Sección de temas -->
                 <div class="topics">
                     <h2 class="h2">Temas</h2>
                     <a href="#" class="topic-btn">
@@ -325,29 +313,17 @@
                         <p>Historia del Software</p>
                     </a>
                 </div>
-                <!-- Sección de etiquetas -->
+
                 <div class="tags">
                     <h2 class="h2">Etiquetas</h2>
                     <div class="wrapper">
                         <button class="hashtag">#programación</button>
                         <button class="hashtag">#historia</button>
                         <button class="hashtag">#software</button>
-                        <button class="hashtag">#lenguajes</button>
-                        <button class="hashtag">#innovación</button>
-                        <button class="hashtag">#computación</button>
-                        <button class="hashtag">#ciencia</button>
-                        <button class="hashtag">#tecnología</button>
-                        <button class="hashtag">#algoritmos</button>
-                        <button class="hashtag">#código</button>
-                        <button class="hashtag">#pioneros</button>
-                        <button class="hashtag">#desarrollo</button>
-                        <button class="hashtag">#sistemas</button>
-                        <button class="hashtag">#revoluciónDigital</button>
-                        <button class="hashtag">#hardwareSoftware</button>
-                        <button class="hashtag">#informática</button>
+                        <!-- Resto de etiquetas -->
                     </div>
                 </div>
-                <!-- Sección de boletín -->
+
                 <div class="newsletter">
                     <h2 class="h2">Boletín</h2>
                     <div class="wrapper">
@@ -363,25 +339,21 @@
     </div>
 </main>
 
-<!-- FOOTER: Información de pie de página y derechos de autor -->
+<!-- FOOTER -->
 <footer>
     <div class="container">
         <div class="wrapper">
             <a href="index.html" class="footer-logo">
-                <img src="./assets/images/Logo_ligth.svg" alt="Logo de SimpleBlog" width="200" class="logo-light">
-                <img src="./assets/images/Logo_dark.svg" alt="Logo de SimpleBlog" width="200" class="logo-dark">
+                <img src="assets/images/logo/Logo_ligth.svg" alt="Logo de SimpleBlog" width="200" class="logo-light">
+                <img src="assets/images/logo/Logo_dark.svg" alt="Logo de SimpleBlog" width="200" class="logo-dark">
             </a>
-            <p class="footer-text">
-                Explora la historia de la informática y los pioneros que la hicieron posible.
-            </p>
+            <p class="footer-text">Explora la historia de la informática y los pioneros que la hicieron posible.</p>
         </div>
     </div>
-    <p class="copyright">
-        &copy; Copyright 2024 <a href="#">AndreaGutierrez</a>
-    </p>
+    <p class="copyright">&copy; Copyright 2024 <a href="#">AndreaGutierrez</a></p>
 </footer>
 
-<!-- Enlaces a JavaScript y Ionicons -->
+<!-- JavaScript -->
 <script src="assets/js/script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

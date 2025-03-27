@@ -1,18 +1,20 @@
-/*------------------------------------------------*\
-  # MAIN SECTION (Contenedor central de contenido)
-\*------------------------------------------------*/
+/*-----------------------------------------*\
+  # MAIN CONTENT SECTION
+\*-----------------------------------------*/
 
 .main {
     background: var(--background-secondary);
     padding: var(--py) 0;
 }
 
-/* Por defecto, en móviles o pantallas pequeñas se muestra solo el blog */
 .main .container {
     display: block;
 }
 
-/* BLOG SECTION dentro de MAIN */
+/*-----------------------------------------*\
+  # BLOG SECTION
+\*-----------------------------------------*/
+
 .blog .h2 {
     line-height: 1.3;
     margin-bottom: 3rem;
@@ -21,15 +23,21 @@
 
 .blog-card-group {
     margin-bottom: 3rem;
+    display: grid;
+    gap: 1rem;
 }
 
 .blog-card {
     background: var(--background-primary);
     padding: 10px;
-    margin-bottom: 1rem;
     border-radius: 10px;
     box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.05);
     transition: 0.25s ease;
+    overflow: hidden;
+}
+
+.blog-card.hidden-article {
+    display: none !important;
 }
 
 .blog-card:hover {
@@ -39,6 +47,7 @@
 
 .blog-card-banner {
     display: none;
+    position: relative;
 }
 
 .blog-content-wrapper {
@@ -100,7 +109,6 @@
 .blog .separator {
     background: var(--foreground-tertiary);
     margin-inline: 3px;
-    margin: 0 3px;
     width: 3px;
     height: 3px;
     border-radius: 3px;
@@ -111,33 +119,94 @@
 }
 
 .load-more {
-    margin-inline: auto;
-    margin: auto;
+    margin: 2rem auto 0;
     background: var(--foreground-secondary);
     color: var(--background-secondary);
     padding: 0.6875rem 1.1875rem;
+    display: block;
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
 }
 
 .load-more:hover {
     background: var(--accent);
+    transform: translateY(-2px);
 }
 
-/*------------------------------------------------*\
-  # ASIDE (Barra lateral)
-\*------------------------------------------------*/
+/*-----------------------------------------*\
+  # SIDEBAR SECTION
+\*-----------------------------------------*/
 
-/* Por defecto se oculta en dispositivos pequeños */
 .aside {
     display: none;
 }
 
-/*------------------------------------------------*\
-  # MEDIA QUERIES PARA MAIN Y ASIDE
-\*------------------------------------------------*/
+/*-----------------------------------------*\
+  # ANIMATIONS
+\*-----------------------------------------*/
 
-/**
- * Para pantallas mayores a 550px, se ajustan algunos detalles del blog
- */
+.hidden-article {
+    opacity: 0;
+    transform: translateY(20px);
+    height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.hidden-article.pre-animate {
+    display: none !important;
+}
+
+.animate-show {
+    animation: cardAppear 0.6s ease forwards;
+}
+
+@keyframes cardAppear {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.blog-card {
+    transition: all 0.3s ease;
+    will-change: transform, opacity;
+}
+
+.load-more {
+    position: relative;
+    overflow: hidden;
+}
+
+.load-more::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%, -50%);
+    transform-origin: 50% 50%;
+}
+
+.load-more:focus:not(:active)::after {
+    animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+    0% { transform: scale(0, 0); opacity: 0.5; }
+    100% { transform: scale(20, 20); opacity: 0; }
+}
+
+/*-----------------------------------------*\
+  # MEDIA QUERIES
+\*-----------------------------------------*/
+
 @media (min-width: 550px) {
     .blog-card {
         display: grid;
@@ -148,21 +217,29 @@
         display: block;
         overflow: hidden;
         border-radius: 5px;
+        height: 100%;
     }
     .blog-banner-img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        transition: transform 0.25s ease;
+    }
+    .blog-card:hover .blog-banner-img {
+        transform: scale(1.05);
+    }
+    .blog-card {
+        height: auto;
+    }
+    .hidden-article {
+        height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 
-/**
- * Para pantallas mayores a 650px se hacen otros ajustes del blog
- */
 @media (min-width: 650px) {
-    :root {
-        --fs-1: 2.25rem;
-    }
+    :root { --fs-1: 2.25rem; }
     .blog .h2 {
         position: relative;
         text-align: left;
@@ -215,21 +292,17 @@
     }
 }
 
-/**
- * Para pantallas mayores a 1024px, se muestra la distribución en dos columnas:
- * - Blog en la columna izquierda (mayor)
- * - Aside en la columna derecha (menor)
- */
 @media (min-width: 1024px) {
-    /* Distribución en dos columnas para el contenedor main */
     .main .container {
         display: grid;
         grid-template-columns: 5fr 2fr;
         gap: 60px;
     }
-    /* Se muestra el aside */
     .aside {
         display: block;
         align-self: stretch;
+    }
+    .blog-card-group {
+        grid-template-columns: 1fr;
     }
 }

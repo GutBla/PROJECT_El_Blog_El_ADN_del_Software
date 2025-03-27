@@ -1,41 +1,113 @@
+/*-----------------------------------------*\
+  # NAVEGACIÓN MÓVIL
+\*-----------------------------------------*/
+
 'use strict';
 
-// navbar variables
+// Elementos del menú móvil
 const nav = document.querySelector('.mobile-nav');
 const navMenuBtn = document.querySelector('.nav-menu-btn');
 const navCloseBtn = document.querySelector('.nav-close-btn');
 
+// Alternar visibilidad del menú móvil
+const toggleMobileNav = () => nav.classList.toggle('active');
 
-// navToggle function
-const navToggleFunc = function () { nav.classList.toggle('active'); }
+// Event listeners para botones del menú
+navMenuBtn.addEventListener('click', toggleMobileNav);
+navCloseBtn.addEventListener('click', toggleMobileNav);
 
-navMenuBtn.addEventListener('click', navToggleFunc);
-navCloseBtn.addEventListener('click', navToggleFunc);
+/*-----------------------------------------*\
+  # CAMBIO DE TEMA CON PERSISTENCIA
+\*-----------------------------------------*/
 
+// Botones de cambio de tema
+const themeBtns = document.querySelectorAll('.theme-btn');
 
+// Función para guardar la preferencia de tema
+const saveThemePreference = (isDarkMode) => {
+    localStorage.setItem('darkMode', isDarkMode);
+};
 
-// theme toggle variables
-const themeBtn = document.querySelectorAll('.theme-btn');
+// Función para cargar la preferencia de tema
+const loadThemePreference = () => {
+    const darkMode = localStorage.getItem('darkMode') === 'true';
 
+    if (darkMode) {
+        document.body.classList.add('dark-theme');
+        document.body.classList.remove('light-theme');
+        themeBtns.forEach(btn => {
+            btn.classList.add('dark');
+            btn.classList.remove('light');
+        });
+    } else {
+        document.body.classList.add('light-theme');
+        document.body.classList.remove('dark-theme');
+        themeBtns.forEach(btn => {
+            btn.classList.add('light');
+            btn.classList.remove('dark');
+        });
+    }
 
-for (let i = 0; i < themeBtn.length; i++) {
+    return darkMode;
+};
 
-    themeBtn[i].addEventListener('click', function () {
+// Función para alternar entre temas claro/oscuro
+const toggleTheme = () => {
+    const isDarkMode = document.body.classList.contains('light-theme');
 
-        // toggle `light-theme` & `dark-theme` class from `body`
-        // when clicked `theme-btn`
-        document.body.classList.toggle('light-theme');
-        document.body.classList.toggle('dark-theme');
+    document.body.classList.toggle('light-theme');
+    document.body.classList.toggle('dark-theme');
 
-        for (let i = 0; i < themeBtn.length; i++) {
+    themeBtns.forEach(btn => {
+        btn.classList.toggle('light');
+        btn.classList.toggle('dark');
+    });
 
-            // When the `theme-btn` is clicked,
-            // it toggles classes between `light` & `dark` for all `theme-btn`.
-            themeBtn[i].classList.toggle('light');
-            themeBtn[i].classList.toggle('dark');
+    saveThemePreference(isDarkMode);
+};
 
-        }
+// Cargar preferencia al iniciar
+loadThemePreference();
 
-    })
+// Añadir event listeners a todos los botones de tema
+themeBtns.forEach(btn => btn.addEventListener('click', toggleTheme));
 
-}
+/*-----------------------------------------*\
+  # ANIMACIÓN DE LÍNEA DE TIEMPO
+\*-----------------------------------------*/
+
+const initTimelineAnimation = () => {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+
+    const checkItemVisibility = () => {
+        const windowHeight = window.innerHeight;
+        const scrollPosition = window.scrollY;
+
+        timelineItems.forEach(item => {
+            const itemPosition = item.getBoundingClientRect().top + scrollPosition;
+            const isVisible = (itemPosition < scrollPosition + windowHeight * 0.75);
+
+            if (isVisible) {
+                item.classList.add('visible');
+            }
+        });
+    };
+
+    // Optimización del evento scroll con debounce
+    let isScrolling;
+    window.addEventListener('scroll', () => {
+        window.clearTimeout(isScrolling);
+        isScrolling = setTimeout(checkItemVisibility, 50);
+    }, { passive: true });
+
+    // Comprobar visibilidad al cargar
+    checkItemVisibility();
+};
+
+/*-----------------------------------------*\
+  # INICIALIZACIÓN
+\*-----------------------------------------*/
+
+document.addEventListener('DOMContentLoaded', () => {
+    initTimelineAnimation();
+});

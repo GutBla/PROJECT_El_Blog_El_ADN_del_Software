@@ -1,8 +1,55 @@
-# Default ignored files
-/shelf/
-/workspace.xml
-# Editor-based HTTP Client requests
-/httpRequests/
-# Datasource local storage ignored files
-/dataSources/
-/dataSources.local.xml
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de entornos de desarrollo
+*.swp
+*.swo
+*.log
+*.bak
+*.tmp
+*.idea/
+*.iml
+*.vscode/
+
+# Archivos de dependencias/node
+node_modules/
+package-lock.json
+yarn.lock
+
+# Archivos de compilación/bundlers
+/dist/
+/build/
+*.min.js
+*.min.css
+
+# Archivos de entorno (pueden contener credenciales)
+.env
+.env.local
+.env.development
+.env.production
+
+# Archivos de caché
+.cache/
+
+# Archivos de sistema
+*.orig
+
+# Archivos de usuario
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archivos de test/coverage
+/coverage/
+*.lcov
+
+# Archivos de depuración
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos de preprocesadores CSS
+.sass-cache/
